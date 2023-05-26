@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+
 site_name: HAKUNA
 site_url: https://utk-spartan.github.io/
 
@@ -9,3 +11,6 @@ site_author: 'Utkarsh Saxena'
 docs_dir: docs/
 repo_name: 'utk-spartan/utk-spartan.github.io'
 repo_url: 'https://github.com/utk-spartan/utk-spartan.github.io'
+
+theme:
+  name: 'material'
