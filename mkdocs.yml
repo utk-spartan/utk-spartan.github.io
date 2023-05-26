@@ -1,0 +1,11 @@
+site_name: HAKUNA
+site_url: https://utk-spartan.github.io/
+
+nav:
+    - Home: index.md
+    - About: about.md
+
+site_author: 'Utkarsh Saxena'
+docs_dir: docs/
+repo_name: 'utk-spartan/utk-spartan.github.io'
+repo_url: 'https://github.com/utk-spartan/utk-spartan.github.io'
