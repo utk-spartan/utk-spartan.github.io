@@ -1,7 +1,9 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
-site_name: HAKUNA
+site_name: Utkarsh Saxena is a Software Engineer
 site_url: https://utk-spartan.github.io/
+site_description: 'Personal website of Utkarsh Saxena'
+copyright: Copyright &copy; 2023 Utkarsh Saxena
 
 nav:
     - Home: index.md
@@ -9,8 +11,74 @@ nav:
 
 site_author: 'Utkarsh Saxena'
 docs_dir: docs/
-repo_name: 'utk-spartan/utk-spartan.github.io'
-repo_url: 'https://github.com/utk-spartan/utk-spartan.github.io'
+
+## Uncomment to show repo metadata in page header
+# repo_name: 'utk-spartan/utk-spartan.github.io'
+# repo_url: 'https://github.com/utk-spartan/utk-spartan.github.io'
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: iso_date
+      enable_creation_date: true
+      fallback_to_build_date: true
+  # - social
+  # - tags
 
 theme:
   name: 'material'
+  # custom_dir: overrides
+  language: en
+  icon:
+    logo: material/code-greater-than
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    # - search.share
+
+  palette:
+    # Light Theme
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: teal
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark Theme
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: amber
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/utk-spartan
+      name: Utkarsh Saxena on GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/utkarsh-saxena-29b6a3114/
+      name: Utkarsh Saxena on LinkedIn
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/utkspartan
+      name: Utkarsh Saxena on Instagram
+  # analytics:
+  #   provider: google
+  #   property:
+
+  # consent:
+  #   title: A cookie for you! 🍪
+  #   description: >
+  #     Hi! I use cookies to check whether people actually are interested in what
+  #     i have to say. Please consent, or I will never know if I kept blabbing
+  #     alone this whole time... :-(
