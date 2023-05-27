@@ -1,3 +1,8 @@
 mkdocs==1.4.3
 mkdocs-material==9.*
 mkdocs-git-revision-date-localized-plugin==1.2.0
+mkdocs-glightbox==0.3.4
+
+# Optional for image processing
+cairosvg==2.7.0
+pillow==9.5.0

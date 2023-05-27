@@ -1,13 +1,15 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 
-site_name: Utkarsh Saxena is a Software Engineer
+site_name: Utkarsh Saxena
 site_url: https://utk-spartan.github.io/
 site_description: 'Personal website of Utkarsh Saxena'
-copyright: Copyright &copy; 2023 Utkarsh Saxena
+copyright: >
+  Copyright &copy; 2023 Utkarsh Saxena
 
-nav:
-    - Home: index.md
-    - About: about.md
+# nav:
+#     - Home: index.md
+#     - About Me: about.md
+#     - Notes: notes.md
 
 site_author: 'Utkarsh Saxena'
 docs_dir: docs/
@@ -16,14 +18,79 @@ docs_dir: docs/
 # repo_name: 'utk-spartan/utk-spartan.github.io'
 # repo_url: 'https://github.com/utk-spartan/utk-spartan.github.io'
 
+
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji 
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
 plugins:
-  - search
+  - search:
+      lang: en
   - git-revision-date-localized:
       type: iso_date
       enable_creation_date: true
       fallback_to_build_date: true
-  # - social
-  # - tags
+      exclude:
+        - index.md
+        - about.md
+  - tags:
+      tags_file: notes/index.md
+      # allowed tags is in insiders
+      tags_allowed:
+        - Kernel
+        - Linux
+        - Go
+        - Python
+        - Docker
+        - Scala
+  - glightbox:
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
+       skip_classes:
+         - skip-lightbox
+       auto_caption: false
+       caption_position: bottom
+  - social:
+      # Needs image processing libraries installed 
+      enabled: !ENV [CI, false]
+      cards: !ENV [CI, false]
 
 theme:
   name: 'material'
@@ -39,16 +106,16 @@ theme:
     - navigation.expand
     - navigation.indexes
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
-    # - search.share
 
   palette:
     # Light Theme
     - scheme: default
       media: "(prefers-color-scheme: light)"
-      primary: teal
-      accent: light blue
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
@@ -60,6 +127,9 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+  font:
+    text: Ubuntu
+    code: Roboto Mono
 
 extra:
   social:
@@ -72,6 +142,7 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/utkspartan
       name: Utkarsh Saxena on Instagram
+  generator: true # show the line "Made with Material for MkDocs"
   # analytics:
   #   provider: google
   #   property:
@@ -82,3 +153,9 @@ extra:
   #     Hi! I use cookies to check whether people actually are interested in what
   #     i have to say. Please consent, or I will never know if I kept blabbing
   #     alone this whole time... :-(
+
+extra_javascript:
+# For mathjax
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
