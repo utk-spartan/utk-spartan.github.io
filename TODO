@@ -9,3 +9,6 @@ https://hugo-profile.netlify.app/
 -- linux kernel dev
 -- scala native game
 -- android app
+- Customize the landing page
+  - https://github.com/squidfunk/mkdocs-material/issues/1996
+  - Use haskell oneliner for generating email
