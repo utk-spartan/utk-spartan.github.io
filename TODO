@@ -3,9 +3,29 @@
 - borrow homepage design from
 https://hugo-profile.netlify.app/
 
+- Check UI / structure for notes section
+https://emanote.srid.ca/
+
 - pending notes/ blogs
 -- dotfiles
 -- dev enc setup on omen and mac
 -- linux kernel dev
 -- scala native game
 -- android app
+- Customize the landing page
+  - https://github.com/squidfunk/mkdocs-material/issues/1996
+  - Use haskell oneliner for generating email
+
+https://github.com/tubearchivist/tubearchivist
+
+- Take inspiration from https://www.beyondthelines.net/
+  - https://www.beyondthelines.net/algorithm/basic-paxos
+  - https://gist.github.com/enzief/dbf3c0e72ef03860878b77203f62ce87
+
+- Cool stuff
+[sigkill blog](https://sigkill.dk/links.html)
+
+- To read
+https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+https://github.com/mikeroyal/Apple-Silicon-Guide
+http://xahlee.info/linux/why_tiling_window_manager_sucks.html
