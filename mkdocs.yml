@@ -145,11 +145,14 @@ extra:
       link: https://github.com/utk-spartan
       name: Utkarsh Saxena on GitHub
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/utkarsh-saxena-29b6a3114/
+      link: https://www.linkedin.com/in/utk-saxena/
       name: Utkarsh Saxena on LinkedIn
     - icon: fontawesome/brands/instagram
       link: https://instagram.com/utkspartan
       name: Utkarsh Saxena on Instagram
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/UTKspartan
+      name: Utkarsh Saxena on Twitter
   generator: true # show the line "Made with Material for MkDocs"
   # analytics:
   #   provider: google
