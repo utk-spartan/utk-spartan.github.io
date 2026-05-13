@@ -74,7 +74,7 @@ search:
 }
 </style>
 
-Hello! I am Utkarsh Saxena, and this is my personal website.
+Hi, I'm Utkarsh Saxena, a software engineer from India and a lifelong learner. Computers have fascinated me since childhood, first as tools to explore and later as systems to understand deeply. I enjoy building useful software, learning how things work, and steadily getting better at the things I care about.
 
 <figure id="about-profile">
   <div class="square">
@@ -82,13 +82,6 @@ Hello! I am Utkarsh Saxena, and this is my personal website.
   </div>
   <figcaption class='caption'>A nice picture of me</figcaption>
 </figure>
-
-## Quick bits
-
-A passionate Data / Software engineer from India.
-Ever since I was little, I was fascinated by everything that revolved around computers and such. I made it my life mission to learn everything I could about computers, how to use them and how they worked, hoping that I'd be good enough to work with them someday.
-
-## Current occupation
 
 ## Want more?
 
