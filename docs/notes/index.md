@@ -11,6 +11,6 @@ Look them up, you may find something useful, you never know :wink:.
 
 ## Tags
 
-Following is a list of relevant tags:
+Following is a list of relevant tags used across notes:
 
 [TAGS]

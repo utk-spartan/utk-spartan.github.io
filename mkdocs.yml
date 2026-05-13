@@ -82,6 +82,8 @@ plugins:
         - Opinion
         - Distributed systems
         - Backup
+        - Database
+        - Concurrency
   - glightbox:
        touchNavigation: true
        loop: false
